@@ -23,14 +23,23 @@ int sumOfDigits(int n){
     return n%10 + sumOfDigits(n/10);
 }
 
+int sumOfSquares(int n){
+    if(n==1){
+        return 1;
+    }
+    return n*n + sumOfSquares(n-1);
+
+}
+
 int main(){
     int n = 100;
 
     cout<<sum(n)<<endl;
     reverseTheDigits(100);
     cout<<endl;
-    cout<<sumOfDigits(100);
+    cout<<sumOfDigits(100)<<endl;
 
+    cout<<sumOfSquares(5);
 
     return 0;
 }
