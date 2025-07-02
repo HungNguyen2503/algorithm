@@ -17,7 +17,6 @@ void insertionSort(vector<int>& arr) {
     }
 }
 
-// Hàm để in mảng (dùng cho tất cả các thuật toán)
 void printArray(const vector<int>& arr) {
     for (int x : arr) {
         cout << x << " ";
